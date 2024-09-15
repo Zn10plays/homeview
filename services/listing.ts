@@ -135,6 +135,7 @@ export const createListing = async (data: { [x: string]: any }) => {
     price,
     title,
     description,
+    video: videoSrc,
   } = data;
 
   Object.keys(data).forEach((value: any) => {
@@ -160,6 +161,7 @@ export const createListing = async (data: { [x: string]: any }) => {
       latlng,
       price: parseInt(price, 10),
       userId: user.id,
+      videoSrc
     },
   });
 

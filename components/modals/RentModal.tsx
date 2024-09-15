@@ -19,14 +19,16 @@ import ImageUpload from "../ImageUpload";
 
 import { categories } from "@/utils/constants";
 import { createListing } from "@/services/listing";
+import VideoUpload from "../VideoUpload";
 
 const steps = {
   "0": "category",
   "1": "location",
   "2": "guestCount",
   "3": "image",
-  "4": "title",
-  "5": "price",
+  "4": "video",
+  "5": "title",
+  "6": "price",
 };
 
 enum STEPS {
@@ -34,8 +36,9 @@ enum STEPS {
   LOCATION = 1,
   INFO = 2,
   IMAGES = 3,
-  DESCRIPTION = 4,
-  PRICE = 5,
+  VIDEO = 4,
+  DESCRIPTION = 5,
+  PRICE = 6,
 }
 
 const RentModal = ({ onCloseModal }: { onCloseModal?: () => void }) => {
@@ -62,6 +65,7 @@ const RentModal = ({ onCloseModal }: { onCloseModal?: () => void }) => {
       price: "",
       title: "",
       description: "",
+      video: "",
     },
   });
 
@@ -208,6 +212,18 @@ const RentModal = ({ onCloseModal }: { onCloseModal?: () => void }) => {
           </div>
         );
 
+      case STEPS.VIDEO:
+        return (
+          <div className="flex flex-col gap-6">
+            <Heading
+              title="Add a video of your place"
+              subtitle="Show guests what your place looks like!"
+            />
+            <VideoUpload
+              onChange={setCustomValue}
+              initialVideo={getValues("video")}
+            />
+          </div>);
       case STEPS.PRICE:
         return (
           <div className="flex flex-col gap-6">

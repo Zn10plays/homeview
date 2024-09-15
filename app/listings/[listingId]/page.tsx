@@ -64,6 +64,8 @@ const ListingPage = async ({ params: { listingId } }: { params: IParams }) => {
           guestCount={guestCount}
           bathroomCount={bathroomCount}
           latlng={latlng}
+          structSrc={listing.structSrc}
+          listingId={id}
         />
       </ListingClient>
     </section>
