@@ -1,91 +1,19 @@
-# Airbnb Clone
+## Inspiration
+As a person who likes traveling and has been to multiple different countries, one of the biggest issues in traveling has been the housing. Home images on listings often seem bigger or brighter in pictures, but the reality is often disappointing. Our inspiration comes from real life experience, which is why we wanted to make an website that allows travelers, renters, and homebuyers the ability to explore properties in a more accurate and immersive way, ensuring that what they see is truly what they get. 
 
-This is an Airbnb clone built with Next.js, TypeScript, Tailwind CSS, MongoDB, Prisma, Next auth, Leaflet and many other technologies.
+## What it does
+_Homeview_ is a platform that allows users to explore real estate properties through immersive 3D models. By offering accurate, detailed models, _HomeView_ ensures that buyers, renters, and travelers can view homes as if they were physically there. This helps users make more informed decisions, eliminating the discrepancies between online images and the actual property.
+## How we built it
 
-## Features
-
-- User registration and authentication
-- Property listing and browsing
-- Property booking and reservations
-- Search and filtering of properties
-- Interactive map using Leaflet to display property locations
-
-## Demo
-
-You can check out a live demo of the Airbnb clone project [here](https://airbnb-clone-phi-green.vercel.app/).
-
-## Screenshots
-
-<kbd><img width="944" alt="vacationhub" src="https://github.com/sudeepmahato16/airbnb_clone/assets/122378993/f893e203-8a2d-4ff1-ae20-67e64187b770"></kbd>
-
-<kbd><img width="886" alt="login-modal" src="https://github.com/sudeepmahato16/airbnb_clone/assets/122378993/3d6675e0-6046-48dc-b55f-7ef318581ccd"></kbd>
-
-<kbd><img width="810" alt="listing" src="https://github.com/sudeepmahato16/airbnb_clone/assets/122378993/a0b05a50-cbc2-40db-8f62-6cc203a7c887"></kbd>
-
-## Prerequisites
-
-Make sure you have the following software installed on your system:
-
-- git If you want to clone the project from GitHub and work with it locally, you will need to have Git installed on your system. You can download and install Git from the official website (https://git-scm.com/).
-
-- Node.js Application requires Node.js to be installed on your system in order to run. You can download and install the latest version of Node.js from the official website (https://nodejs.org/).
-
-## Installation
-
-- Clone the repository:
-
-  ```
-  git clone https://github.com/sudeepmahato16/airbnb_clone.git
-  ```
-
-- Navigate to the project directory:
-
-  ```
-  cd Airbnb
-  ```
-
-- Install the dependencies:
-
-  ```
-  npm install
-  ```
-
-- Set up the environment variables:
-
-  1.  Create a `.env.local` file in the root directory.
-
-  2.  Add the following variables to the .env file, replacing the placeholder values with your own:
-
-      ```
-      DATABASE_URL=<your-mongodb-uri>
-      GITHUB_CLIENT_ID=<your-github-client-id>
-      GITHUB_CLIENT_SECRET=<your-github-client-secret>
-      GOOGLE_CLIENT_ID=<your-google-client-id>
-      GOOGLE_CLIENT_SECRET=<your-google-client-secret>
-      NEXTAUTH_SECRET=<your-nextauth-secret>
-      EDGE_STORE_ACCESS_KEY=<your-edge-store-access-key>
-      EDGE_STORE_SECRET_KEY=<your-edge-store-secret-key>
-      ```
-
-  ```
-
-  ```
-
-## Usage
-
-- Start the development server:
-
-  ```
-  npm run dev
-  ```
-
-- Open your browser and visit `http://localhost:3000` to access the application.
-
-## Contributing
-
-Contributions are welcome! If you want to contribute to this project, please follow these steps:
-
-- Fork the repository.
-- Create a new branch for your feature or bug fix.
-- Commit your changes to the new branch.
-- Open a pull request back to the main repository, including a description of your changes.
+## Challenges we ran into
+We ran into challenges such as :
+-**Performance issues**, compiling and running the program, often resulted in structures taking too long to generate. 
+-**Complex coding and debugging.**
+-**Compatibility across platforms**, working across multiple devices and platforms is challenging.
+-**Resource constraints**, time and budget made it hard to execute the desired effects.
+## Accomplishments that we're proud of
+Since it's our first time interacting with motion to structure, we are proud of what we have created. 
+## What we learned
+We learned about motion to structure, C++, and transpiling code to python. 
+## What's next for HomeView
+Finalize Platform Development, Partnership Development, Launch Marketing and Sales Campaign, and Fundraising/Investment
